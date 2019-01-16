@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: python manage.py runserver 0.0.0.0:8080
+web: gunicorn basic_app.wsgi

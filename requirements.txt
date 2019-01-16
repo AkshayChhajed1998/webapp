@@ -26,6 +26,7 @@ Pillow==5.2.0
 plotly==3.2.0
 prompt-toolkit==1.0.15
 psycopg2==2.7.6.1
+psycopg2-binary==2.7.6.1
 ptyprocess==0.6.0
 Pygments==2.2.0
 pytz==2018.5

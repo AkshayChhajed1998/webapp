@@ -9,7 +9,7 @@ django-extensions==2.1.2
 django-heroku==0.3.1
 django-multiselectfield==0.1.8
 django-widget-tweaks==1.4.2
-djangorestframework==3.9.0
+djangorestframework==3.11.2
 djqgrid==0.2.4
 gunicorn==19.9.0
 idna==2.7
